@@ -1,9 +1,21 @@
 ---
 ---
 @charset "utf-8";
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-@import "base", "fixie";
+
+//@import plugins
+
+//@import mixins
+@import "mixins/media-query";
+@import "mixins/display_inline_block";
+@import "mixins/round_percentage";
+
+//@import prtials
+@import "partials/base";
+@import "partials/typography";
+
+//@import layout
+@import "layout/header";
+@import "layout/footer";
+
+//@import last
+@import "partials/fixie";
