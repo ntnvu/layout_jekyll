@@ -1,13 +1,3 @@
-@mixin fix_all_ie($element...){
-  @each $ele in $element {
-    _:-ms-lang(x),#{$ele}{
-      @content;
-    }
-    _:-ms-fullscreen, :root #{$ele}{
-      @content;
-    }
-    .lt-ie10 #{$ele}{
-      @content;
-    }
-  }
+.lt-ie9{
+
 }

@@ -6,8 +6,10 @@
 
 //@import mixins
 @import "mixins/media-query";
-@import "mixins/display_inline_block";
 @import "mixins/round_percentage";
+@import "mixins/fix_all_ie";
+@import "mixins/set_width_inline_block";
+@import "mixins/clearfix";
 
 //@import prtials
 @import "partials/base";
